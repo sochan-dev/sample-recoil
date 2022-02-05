@@ -4,7 +4,7 @@ import { RecoilRoot } from 'recoil'
 import dynamic from 'next/dynamic'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const NoSsr = dynamic(() => import('../src/components/NoSsr'))
+  const NoSsr = dynamic(() => import('../components/containments/NoSsr'))
 
   return (
     <NoSsr>
